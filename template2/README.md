@@ -18,19 +18,19 @@ Basic sample for orbisdev environment using initOrbisLinkVanillaGl
 [ORBIS][DEBUG]: [ORBISLINK] patch_module patching module
 [ORBIS][DEBUG]: [ORBISLINK] loadModulesGl piglet modules patched
 [ORBIS][DEBUG]: [ORBISLINK] initOrbisLinkAppVanillaGl piglet modules patched
-[ORBIS][INFO]: [TEMPLATE1] VanillaGl initialization done!!!
-[ORBIS][INFO]: [TEMPLATE1][infoApp][37] 13 modules already loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libkernel_sys.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceLibcInternal.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceSysmodule.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceIpmi.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceRegMgr.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceSystemService.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceNet.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceUserService.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceMbus.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libScePad.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libScePigletv2VSH.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1][infoApp][47] Module libSceShaccVSH.sprx is loaded
-[ORBIS][INFO]: [TEMPLATE1] Ready to have a lot of fun
+[ORBIS][INFO]: [TEMPLATE2] VanillaGl initialization done!!!
+[ORBIS][INFO]: [TEMPLATE2][infoApp][37] 13 modules already loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libkernel_sys.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceLibcInternal.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceSysmodule.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceIpmi.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceRegMgr.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceSystemService.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceNet.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceUserService.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceMbus.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libScePad.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libScePigletv2VSH.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2][infoApp][47] Module libSceShaccVSH.sprx is loaded
+[ORBIS][INFO]: [TEMPLATE2] Ready to have a lot of fun
 ```

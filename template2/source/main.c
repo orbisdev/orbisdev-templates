@@ -25,26 +25,26 @@ void infoApp()
 	SceKernelModule handles[256];
 	size_t numModules;
 	size_t i;
-	debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE1] VanillaGl initialization done!!!\n");
+	debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE2] VanillaGl initialization done!!!\n");
 	memset(handles, 0, sizeof(handles));
 
 	ret=sceKernelGetModuleList(handles,(sizeof(handles)/sizeof((handles)[0])),&numModules);
 	if(ret)
 	{
-		debugNetPrintf(DEBUGNET_ERROR,"[TEMPLATE1][%s][%d] error 0x%08X\n",__FUNCTION__,__LINE__,ret);
+		debugNetPrintf(DEBUGNET_ERROR,"[TEMPLATE2][%s][%d] error 0x%08X\n",__FUNCTION__,__LINE__,ret);
 		goto finish;
 	}
-	debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE1][%s][%d] %d modules already loaded\n",__FUNCTION__,__LINE__,numModules);
+	debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE2][%s][%d] %d modules already loaded\n",__FUNCTION__,__LINE__,numModules);
 
 	for(i=1;i<numModules;i++)
 	{
 		ret=sceKernelGetModuleInfo(handles[i],&tmpInfo);
 		if(ret)
 		{
-			debugNetPrintf(DEBUGNET_ERROR,"[TEMPLATE1][%s][%d] error 0x%08X\n",__FUNCTION__,__LINE__,ret);
+			debugNetPrintf(DEBUGNET_ERROR,"[TEMPLATE2][%s][%d] error 0x%08X\n",__FUNCTION__,__LINE__,ret);
 			goto finish;
 		}
-		debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE1][%s][%d] Module %s is loaded\n",__FUNCTION__,__LINE__,tmpInfo.name);
+		debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE2][%s][%d] Module %s is loaded\n",__FUNCTION__,__LINE__,tmpInfo.name);
 		
 	}
 finish:
@@ -57,7 +57,7 @@ bool initApp()
 	{
 		debugNetInit("192.168.1.12",18194,3);
 		infoApp();
-		debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE1] Ready to have a lot of fun\n");
+		debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE2] Ready to have a lot of fun\n");
 
 		sceSystemServiceHideSplashScreen();
 		return true;
