@@ -14,17 +14,6 @@
 #define MEM_SIZE (3UL * 1024 * 1024 * 1024) /* 2600 MiB */
 #define MEM_ALIGN (16UL * 1024)
 
-extern int ftp_active;
-
-const char *sceKernelGetFsSandboxRandomWord();
-int sceKernelMapNamedSystemFlexibleMemory(void** addrInOut, size_t len, int prot, int flags, const char* name);
-typedef void* OrbisMspace;
-
-OrbisMspace sceLibcMspaceCreate(char *, void *, size_t, void *);
-void * sceLibcMspaceMalloc(OrbisMspace, size_t size);
-void sceLibcMspaceFree(OrbisMspace, void *);
-
-
 static OrbisMspace s_mspace = 0;
 static void *address = 0;
 static size_t s_mem_size = MEM_SIZE;
@@ -91,7 +80,7 @@ bool initApp()
 	int ret=initOrbisLinkAppVanillaGl();
 	if(ret==0)
 	{
-		debugNetInit(__ORBIS_IP__,18194,3);
+		debugNetInit(__DEBUGNET_PC_IP__,18194,3);
 		infoApp();
 		debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE3] Ready to have a lot of fun\n");
 
@@ -116,7 +105,7 @@ int main(int argc, char *argv[])
 	s_mspace = sceLibcMspaceCreate("User Mspace", address, MEM_SIZE, 0);
 	printf("sceLibcMspaceCreate %p \n", s_mspace);
   
-	printf("TU PUTA MADRE %d %s\n", max_malloc(0, 1024 * 1024, "MB"), "MB");
+	printf("Total  %d %s\n", max_malloc(0, 1024 * 1024, "MB"), "MB");
 	kill(getpid(), SIGTERM);
 	//exit(1);
 	return 0;
