@@ -91,7 +91,7 @@ bool initApp()
 	int ret=initOrbisLinkAppVanillaGl();
 	if(ret==0)
 	{
-		debugNetInit("192.168.1.12",18194,3);
+		debugNetInit(__ORBIS_IP__,18194,3);
 		infoApp();
 		debugNetPrintf(DEBUGNET_INFO,"[TEMPLATE3] Ready to have a lot of fun\n");
 
